@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+
+    <style>
+      td,
+      th {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>name</th>
+        <th>lastname</th>
+      </tr>
+
+      <tr>
+        <td>Jheison</td>
+        <td>Leon</td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>lastname</th>
+          <th rowspan="2">test</th>
+        </tr>
+
+        <tr>
+          <th>age</th>
+          <th>date</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Jheison</td>
+          <td>Leon</td>
+          <td>Leon</td>
+        </tr>
+
+        <tr>
+          <td>Junior</td>
+          <td>Zegarra</td>
+          <td>Zegarra</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">
+            Numero de datos: 2 asd asd asdasd asd asd asd asd asdasd asd as
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
