@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Semántica</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header,
+        .nav,
+        .main,
+        .section,
+        .article,
+        .aside,
+        .footer {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .section {
+            flex: 3;
+        }
+
+        .aside {
+            flex: 1;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Mi Blog</h1>
+    </div>
+
+    <div class="nav">
+        <a href="#">Inicio</a>
+        <a href="#">Cursos</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <div class="main">
+        <div class="section">
+            <h2>Artículos</h2>
+
+            <div class="article">
+                <h3>HTML Básico</h3>
+                <p>Introducción al HTML.</p>
+            </div>
+
+            <div class="article">
+                <h3>CSS Básico</h3>
+                <p>Introducción al CSS.</p>
+            </div>
+        </div>
+
+        <div class="aside">
+            <p>Publicidad</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 - Curso Web</p>
+    </div>
+
+</body>
+
+</html>
