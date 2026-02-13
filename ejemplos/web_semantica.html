@@ -3,37 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/web_semantica.css" />
     <title>Web Semantica</title>
-
-    <style>
-      body {
-        width: 100vw;
-        height: 100vh;
-      }
-      header {
-        background-color: red;
-      }
-
-      nav {
-        background-color: green;
-      }
-
-      main {
-        background-color: blue;
-        display: flex;
-      }
-
-      aside {
-        background-color: aqua;
-      }
-
-      h1,
-      h2,
-      h3,
-      body {
-        margin: 0;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -41,16 +12,17 @@
     </header>
 
     <nav>
-      <a href="#">inicio</a>
-      <a href="#">Cursos</a>
-      <a href="#">Contacto</a>
+      <a href="#" class="inicio">inicio</a>
+      <a href="#" class="inicio">Cursos</a>
+      <a href="#" class="inicio">Contacto</a>
+          <a href="https://www.google.com" target="_blank" class="inicio">Contacto 2</a>
     </nav>
 
     <main>
       <section>
-        <h2>Cursos disponibles</h2>
+        <h2 class="article">Cursos disponibles</h2>
 
-        <article>
+        <article class="article">
           <h3>HTML Basico</h3>
           <p>Aprende los fundamentos y buenas practicas.</p>
         </article>
@@ -60,7 +32,7 @@
           <p>Diseña tu pagina web.</p>
         </article>
 
-        <article>
+        <article class="article">
           <h3>Javascript</h3>
           <p>Aprende logica de programacion con Javascript.</p>
         </article>
@@ -73,6 +45,8 @@
 
     <footer>
       <p>@ 2026 - Mi sitio</p>
+               <div class="caja">content</div>
+               <input class="input" placeholder="hola">
     </footer>
   </body>
 </html>

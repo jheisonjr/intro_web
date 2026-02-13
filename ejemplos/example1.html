@@ -20,11 +20,40 @@
         height: 40px;
         width: 130px;
       }
+
+      .top-section {
+        padding: 0 20px;
+      }
+
+      #top-section-container {
+        padding: 0 20px !important;
+      }
+
+      .test1 {
+        color: green;
+      }
+
+      .test2 {
+        color: blue;
+      }
+
+      .test3 {
+        color: violet;
+      }
+
+      .test4 {
+        color: orange;
+      }
+
     </style>
   </head>
   <!--Esta etiqueta funciona como contendor principal -->
   <body>
-    <div id="top-section-container" class="top-section container" style="padding: 0 20px">
+    <div
+      id="top-section-container"
+      class="top-section container background-black"
+      style="padding: 0 70px"
+    >
       <div>
         <label> Hi there, I'm Fofana</label>
 
@@ -62,7 +91,11 @@
 
     <br />
 
-    <div id="bottom-section-container" class="bottom-section container" style="background-color: black; color: white; padding: 0 10px">
+    <div
+      id="bottom-section-container"
+      class="bottom-section container background-black"
+      style="background-color: black; color: white; padding: 0 10px"
+    >
       <br />
 
       <div>
@@ -100,7 +133,12 @@
           PageMaker, el cual incluye versiones de Lorem Ipsum.
         </p>
       </div>
-      <br><br>
+      <br /><br />
     </div>
+
+    <label class="test1"> label 1</label>
+    <label class="test2 background-black"> label 2</label>
+    <label class="test3 background-black"> label 3</label>
+    <label class="test4"> label 4</label>
   </body>
 </html>
