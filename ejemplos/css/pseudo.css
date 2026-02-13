@@ -1,0 +1,93 @@
+:root {
+    --main-color: blue;
+    --main-color-dark: red;
+}
+
+.list {
+    width: 500px;
+    display: flex;
+    list-style-type: none;
+}
+
+.breadcrumbs li::before {
+    content: " / ";
+    margin: 0 10px;
+    opacity: 0.1;
+}
+
+.breadcrumbs li:first-of-type::before {
+    content: "";
+}
+
+li::after {
+    content: " * ";
+    margin: 0 10px;
+    opacity: 0.4;
+}
+
+.first-li::before {
+    content: "";
+}
+
+.content {
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+}
+
+.tooltip {
+    background-color:  var(--main-color);
+    position: relative;
+    padding: 1px 3px;
+    color: white;
+    font-size: 2px;
+    width: 100px;
+    height: 100px;
+    box-shadow: inset 14px 5px 8px 18px red;
+}
+
+.tooltip::after {
+    border-bottom: 15px solid var(--main-color);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 1em;
+}
+
+.transition-content {
+    width: 200px;
+    height: 200px;
+    background: red;
+    color: white;
+    padding: 5px;
+    opacity: 1;
+    transition: width 5s cubic-bezier(0.18, 0.89, 0.32, 1.28), opacity 3s;
+}
+
+.transition-content:hover {
+    opacity: 0.5;
+    width: 400px;
+}
+
+.content-animation {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    animation: learn 6s forwards;
+    border-radius: 90px;
+}
+
+@keyframes learn {
+    from {
+        background-color: blue;
+    }
+
+    to {
+        background-color: green;
+    }
+}

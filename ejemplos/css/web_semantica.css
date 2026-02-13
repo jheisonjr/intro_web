@@ -53,7 +53,7 @@ body {
 }
 
 .article:first-child {
-    background-color: black;
+    background-color: white;
 }
 
 .article:last-child {
